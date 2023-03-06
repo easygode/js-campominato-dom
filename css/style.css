@@ -1,0 +1,85 @@
+/*Reset*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    width: 2.5rem;
+}
+
+main {
+    flex-grow: 1;
+    background-color: #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
+    padding: 1.25rem;
+    background-color: aliceblue;
+    justify-content: space-between;
+}
+
+.board {
+    height: 37.5rem;
+    width: 37.5rem;
+    background-color: #7fffd4;;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 0 auto;
+    display: none;
+}
+
+.show {
+    display: flex;
+    background-color: #7fffd4;;
+}
+
+.cell {
+    border: 1px solid gray;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    width: 3.7rem;
+    background-color: beige;
+}
+
+.cell-100 {
+    color: red;
+    border: 1px solid green;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    line-height: 3.7rem;
+}
+
+.cell-81 {
+    color: blue;
+    border: 1px solid yellow;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    line-height: 3.7rem;
+}
+
+.cell-64 {
+    color: black;
+    border: 1px solid red;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    line-height: 3.7rem;
+}
+
+.cell, .cell-100, .cell-81, .cell-64 {
+    line-height: 3.7rem;
+    text-align: center;
+}
