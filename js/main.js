@@ -29,11 +29,17 @@ for(let i = 1; i <= cellNumber; i++){
     const createdElement = createElement('div', 'cell-81', i);
     appendElement(containerBoard, createdElement);
     const button = document.querySelector('.play-btn');
-    button.addEventListener('click', function() {
-})
+    button.addEventListener('click', () {
+        console.log(button);
 }}
 
 //Main
+
+const button = document.querySelector('.play-btn');
+button.addEventListener('click', function() {
+    const play = document.querySelector('.board');
+    play.classList.toggle('show');
+})
 
 button.addEventListener('click', campoMinato);
 
@@ -45,11 +51,6 @@ for(let i = 1; i <= cellNumber; i++){
     appendElement(containerBoard, createdElement);
 }
 
-const button = document.querySelector('.play-btn');
-button.addEventListener('click', function() {
-    const play = document.querySelector('.board');
-    play.classList.toggle('show');
-})
 
 const level = document.querySelectorAll('.select');
 level.addEventListener('click', function() {
@@ -65,7 +66,7 @@ level.addEventListener('click', function() {
 level.addEventListener('click', function() {
     const play = document.querySelector('.medium');
     level.classList.add('cell-64');
-})*/
+})
 
 //1. creare griglia di gioco
 //.prendo il contenitore della griglia - board
@@ -85,17 +86,12 @@ function createBoard (cellNumber){
         const element = document.createElement('div');
         element.classList.add('cell');
         element.style.width = `calc(100% / ${Math.sqrt(cellNumber)})`;
-        element.style.width = usando una variabile in CSS --larghezza, 10
         element.style.height = element.style.width;
-
-        element.addEventListener('click, function()') --- cliccato cliccato
-
+        element.addEventListener('click, function()');
         element.innerText = i;
         boardContainer.append(element);
-    }
-}
-
-return fragmentBoard;
+    } 
+} 
 
 boardContainer.append(fragmentBoard);
 
@@ -106,9 +102,8 @@ function campoMinato() {
 const boardContainer = document.querySelector('.board');
 resetGame();
 boardContainer.innerHTML = '';
-let cellNumber = 100; // TODO: sarà definito da una selezione dell'utente
 
-let level = 1; //1,2,3 //TODO: select da cui reperire il livello 100, 81, 49
+
 
 //1: facile / 100
 //2: facile / 81
