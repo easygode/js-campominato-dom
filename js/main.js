@@ -5,7 +5,7 @@
 
 //Functions
 
-/*function createElement (htmlElement, className, htmlValue){
+function createElement (htmlElement, className, htmlValue){
     const element = document.createElement(htmlElement);
     element.classList.add(className);
     element.innerText = htmlValue;
@@ -37,7 +37,7 @@ for(let i = 1; i <= cellNumber; i++){
 
 button.addEventListener('click', campoMinato);
 
-/*let cellNumber = 81;
+let cellNumber = 81;
 const containerBoard = document.querySelector('.board');
 
 for(let i = 1; i <= cellNumber; i++){
@@ -85,10 +85,10 @@ function createBoard (cellNumber){
         const element = document.createElement('div');
         element.classList.add('cell');
         element.style.width = `calc(100% / ${Math.sqrt(cellNumber)})`;
-        //element.style.width = usando una variabile in CSS --larghezza, 10
+        element.style.width = usando una variabile in CSS --larghezza, 10
         element.style.height = element.style.width;
 
-        //element.addEventListener('click, function()') --- cliccato cliccato
+        element.addEventListener('click, function()') --- cliccato cliccato
 
         element.innerText = i;
         boardContainer.append(element);

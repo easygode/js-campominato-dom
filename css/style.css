@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/*Common*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -14,7 +16,17 @@ body {
 }
 
 #logo {
-    width: 2.5rem;
+    width: 5%;
+}
+
+
+/*Main*/
+
+header, footer {
+    display: flex;
+    justify-content:space-between   ;
+    padding: 20px;
+    align-items: center;
 }
 
 main {
@@ -25,11 +37,11 @@ main {
     align-items: center;
 }
 
-header, footer {
-    padding: 1.25rem;
-    background-color: aliceblue;
-    justify-content: space-between;
+.left {
+    display: flex;
+    align-items:center;
 }
+
 
 .board {
     height: 37.5rem;
